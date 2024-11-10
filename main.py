@@ -6,19 +6,9 @@ import numpy as np
 
 def main():
     year = 2025
-
-    dd = date(year, 1, 1)
-    print(dd.weekday())
-
-    dd += timedelta(days=1)
-    print(dd)
-    
  
     vacations_periods = Calculator().calculate(year, 14)
     generate_csv(year, vacations_periods)
-
-    xx = [x for x in range(1, 12+1)]
-    print(xx)
 
 def generate_csv(year, vacations_periods: dict[date, Decimal]):
     with open(f"vacation_{year}.csv", "w", newline='') as file:

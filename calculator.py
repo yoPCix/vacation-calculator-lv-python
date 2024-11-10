@@ -16,7 +16,6 @@ class Calculator:
         vacation_periods: dict[date, Decimal] = {}
         while first_day <= date(year, 12, 31):
             average_hourly_salary = self.get_average_hourly_salary_for_6_previous_calendar_months(first_day)
-            print(f"Average hourly salary for 6 previous calendar months: {average_hourly_salary}")
             salary_difference_during_period = self.get_salary_difference_during_period(average_hourly_salary, first_day, add_days(first_day, vacation_duration - 1))
             vacation_periods[first_day] = salary_difference_during_period
             print(f"Vacation start on {first_day}, salary difference: {salary_difference_during_period * 100}%")
