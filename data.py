@@ -194,3 +194,19 @@ HoursPerMonth = {
     202512: 150,
     202601: 168
 }
+
+
+MonthNames = {
+    1: "Janvāris",
+    2: "Februāris",
+    3: "Marts",
+    4: "Aprīlis",
+    5: "Maijs",
+    6: "Jūnijs",
+    7: "Jūlijs",
+    8: "Augusts",
+    9: "Septembris",
+    10: "Oktobris",
+    11: "Novembris",
+    12: "Decembris"
+}
